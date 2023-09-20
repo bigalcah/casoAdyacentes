@@ -3,6 +3,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 class ProductoAdyacenteTest {
 
+    //Pruebas Cris
     int[] arreglo;
     int[] arreglo2;
     int[] arreglo3;
