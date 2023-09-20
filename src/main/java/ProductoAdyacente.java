@@ -29,7 +29,7 @@ public class ProductoAdyacente {
                 }
 
             } catch (NumberFormatException e) {
-                System.out.println("Error: Debes ingresar un valor numerico.");
+                System.out.println("Error: Debes ingresar un valor numerico.\n");
             }
 
         } while (!validarLenght(largo));
