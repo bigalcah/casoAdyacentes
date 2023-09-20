@@ -13,16 +13,16 @@ public class ProductoAdyacente {
     }
 
     public static int[] generarArray() {
-
         int largo;
-
         do {
-
-            System.out.print("Ingrese el largo de la lista: ");
+            System.out.print("Ingrese el largo de la lista (2-20): ");
             largo = leer.nextInt();
-
+            if (validarLenght(largo)){
+                System.out.println("Arreglo generado correctamente");
+            }else {
+                System.out.println("\nLargo fuera de los limites, intente de nuevo");
+            }
         } while (!validarLenght(largo));
-
         return new int[largo];
     }
 
@@ -34,7 +34,6 @@ public class ProductoAdyacente {
         System.out.print("Array generada: ");
         System.out.println(Arrays.toString(array));
     }
-
     public static int productoAdyacente (int[] array){
 
         int ProductoMayor = 0;
@@ -46,14 +45,10 @@ public class ProductoAdyacente {
         }
         return ProductoMayor;
     }
-
     public static boolean validarLenght(int largo){
-
         if (largo < 2 || largo > 20) {
             return false;
         }
-
         return true;
     }
-
 }
