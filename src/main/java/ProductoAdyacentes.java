@@ -19,8 +19,15 @@ public class ProductoAdyacentes {
 
     public static int[] generarArray() {
 
-        System.out.println("Ingrese el largo de la lista");
-        int largo = leer.nextInt();
+        int largo;
+
+        do {
+
+            System.out.print("Ingrese el largo de la lista: ");
+            largo = leer.nextInt();
+
+        } while (!validarLenght(largo));
+
         return new int[largo];
     }
 
@@ -29,6 +36,15 @@ public class ProductoAdyacentes {
         for(int i = 0; i < array.length; i++) {
             array[i] = new Random(). nextInt(-1000,1000);
         }
+    }
+
+    public static boolean validarLenght(int largo){
+
+        if (largo < 2 || largo > 20) {
+            return false;
+        }
+
+        return true;
     }
 
 }
