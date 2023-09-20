@@ -5,6 +5,7 @@ public class ProductoAdyacente {
             if ((array[indice]*array[indice+1])>ProductoMayor){
                 ProductoMayor = (array[indice]*array[indice+1]);
             }
+
         }
         return ProductoMayor;
     }
