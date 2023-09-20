@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -6,16 +5,7 @@ public class ProductoAdyacentes {
 
     public static Scanner leer = new Scanner(System.in);
 
-    public static void main(String [] args) {
-
-        int [] array = generarArray();
-        llenarArray(array);
-        System.out.println(Arrays.toString(array));
-    }
-
-    public static int productoAdayacentes(){
-        return 0;
-    }
+    public static void main(String [] args) {}
 
     public static int[] generarArray() {
 
@@ -36,6 +26,7 @@ public class ProductoAdyacentes {
         for(int i = 0; i < array.length; i++) {
             array[i] = new Random(). nextInt(-1000,1000);
         }
+
     }
 
     public static boolean validarLenght(int largo){
