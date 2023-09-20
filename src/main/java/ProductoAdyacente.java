@@ -21,10 +21,13 @@ public class ProductoAdyacente {
         return new int[largo];
     }
 
-    public static void llenarArray(int [] array){
+    public static void llenarArray(int [] array) {
 
-        for(int i = 0; i < array.length; i++) {
-            array[i] = new Random(). nextInt(-1000,1000);
+        for (int i = 0; i < array.length; i++) {
+            array[i] = new Random().nextInt(-1000, 1000);
+        }
+    }
+
     public static int productoAdyacente (int[] array){
         int ProductoMayor = -1000;
         for (int indice = 0; indice < (array.length-1); indice++){
@@ -33,7 +36,7 @@ public class ProductoAdyacente {
             }
 
         }
-
+        return ProductoMayor;
     }
 
     public static boolean validarLenght(int largo){
