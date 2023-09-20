@@ -13,16 +13,27 @@ public class ProductoAdyacente {
     }
 
     public static int[] generarArray() {
-        int largo;
+        int largo = 0;
         do {
-            System.out.print("Ingrese el largo de la lista (2-20): ");
-            largo = leer.nextInt();
-            if (validarLenght(largo)){
-                System.out.println("Arreglo generado correctamente");
-            }else {
-                System.out.println("\nLargo fuera de los limites, intente de nuevo");
+
+            try {
+
+                System.out.print("Ingrese el largo de la lista (2-20): ");
+                String input = leer.next();
+                largo = Integer.parseInt(input);
+
+                if (validarLenght(largo)){
+                    System.out.println("Arreglo generado correctamente");
+                }else {
+                    System.out.println("\nLargo fuera de los limites, intente de nuevo");
+                }
+
+            } catch (NumberFormatException e) {
+                System.out.println("Error: Debes ingresar un valor numerico.");
             }
+
         } while (!validarLenght(largo));
+
         return new int[largo];
     }
 
