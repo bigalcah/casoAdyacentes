@@ -1,6 +1,8 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+
+//Pruebas
 class ProductoAdyacenteTest {
 
     //Pruebas Cris
