@@ -25,6 +25,13 @@ public class ProductoAdyacente {
 
         for(int i = 0; i < array.length; i++) {
             array[i] = new Random(). nextInt(-1000,1000);
+    public static int productoAdyacente (int[] array){
+        int ProductoMayor = -1000;
+        for (int indice = 0; indice < (array.length-1); indice++){
+            if ((array[indice]*array[indice+1])>ProductoMayor){
+                ProductoMayor = (array[indice]*array[indice+1]);
+            }
+
         }
 
     }
