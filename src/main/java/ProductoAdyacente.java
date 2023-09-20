@@ -34,7 +34,6 @@ public class ProductoAdyacente {
         System.out.print("Array generada: ");
         System.out.println(Arrays.toString(array));
     }
-
     public static int productoAdyacente (int[] array){
 
         int ProductoMayor = 0;
@@ -46,7 +45,6 @@ public class ProductoAdyacente {
         }
         return ProductoMayor;
     }
-
     public static boolean validarLenght(int largo){
         if (largo < 2 || largo > 20) {
             return false;
